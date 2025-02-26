@@ -3,20 +3,23 @@
 
 #contact {
   padding: 50px 0;
+  background-color: #f9f9f9; // Fondo claro para la sección de contacto
 
   h2 {
     text-align: center;
     margin-bottom: 30px;
     color: $primary-color;
+    font-size: 2.5rem;
   }
 
   .contact-form {
     background-color: #fff;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    max-width: 600px; // Ancho máximo del formulario de contacto
 
     &:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -28,6 +31,7 @@
       margin-bottom: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
     }
 
     button {
@@ -38,10 +42,51 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      font-size: 1rem;
 
       &:hover {
         background-color: color.adjust($primary-color, $lightness: -10%);
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 15px;
+      margin: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    input, textarea {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 10px;
+      margin: 5px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    input, textarea {
+      font-size: 0.8rem;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 8px;
     }
   }
 }

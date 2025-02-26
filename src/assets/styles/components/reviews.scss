@@ -1,26 +1,35 @@
-@use 'sass:color';
 @use '../utils/variables' as *;
 
 #reviews {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; // Fondo claro para la sección de reseñas
+  text-align: center;
 
   h2 {
-    text-align: center;
-    margin-bottom: 30px;
     color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
   }
 
   .review {
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    margin: 20px auto;
+    max-width: 600px;
 
-    &:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: block;
+      font-size: 1rem;
+      color: $secondary-color;
+      font-weight: 500;
     }
   }
 }
