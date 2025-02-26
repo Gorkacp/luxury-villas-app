@@ -3,9 +3,9 @@
 
 $card-bg-color: #ffffff; // Color de fondo de la tarjeta
 $card-border-color: #e0e0e0; // Color del borde de la tarjeta
-$card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Sombra de la tarjeta
-$card-padding: 20px; // Espaciado interno de la tarjeta
-$card-border-radius: 8px; // Radio de borde de la tarjeta
+$card-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1); // Sombra de la tarjeta
+$card-padding: 1.25rem; // Espaciado interno de la tarjeta
+$card-border-radius: 0.5rem; // Radio de borde de la tarjeta
 
 .card {
   background-color: $card-bg-color;
@@ -17,7 +17,7 @@ $card-border-radius: 8px; // Radio de borde de la tarjeta
 
   &__header {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   &__image {
@@ -28,11 +28,11 @@ $card-border-radius: 8px; // Radio de borde de la tarjeta
   &__description {
     font-size: 1rem;
     color: #666;
-    margin: 10px 0;
+    margin: 0.625rem 0;
   }
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
   }
 }
 

@@ -25,7 +25,7 @@ $font-map: (
 
 // Mapa de breakpoints para responsive design
 $breakpoint-map: (
-  mobile: 480px,
-  tablet: 768px,
-  desktop: 1024px,
+  mobile: 30rem, // 480px convertido a rem
+  tablet: 48rem, // 768px convertido a rem
+  desktop: 64rem, // 1024px convertido a rem
 );

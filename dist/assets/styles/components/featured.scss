@@ -2,12 +2,12 @@
 @use '../utils/variables' as *;
 
 #featured {
-  padding: 50px 0;
+  padding: 3.125rem 0; // 50px convertido a rem
   background-color: #f8f8f8;
 
   h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; // 30px convertido a rem
     color: $primary-color;
     font-size: 2rem;
   }
@@ -16,35 +16,35 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25rem; // 20px convertido a rem
+    padding: 1.25rem; // 20px convertido a rem
+    border-radius: 0.625rem; // 10px convertido a rem
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); // 0 2px 4px convertido a rem
 
     img {
-      width: 200px;
-      height: 150px;
+      width: 12.5rem; // 200px convertido a rem
+      height: 9.375rem; // 150px convertido a rem
       object-fit: cover;
-      border-radius: 10px;
-      margin-right: 20px;
+      border-radius: 0.625rem; // 10px convertido a rem
+      margin-right: 1.25rem; // 20px convertido a rem
     }
 
     .house-details {
       flex: 1;
 
       h3 {
-        margin: 0 0 10px;
+        margin: 0 0 0.625rem; // 0 0 10px convertido a rem
         font-size: 1.5rem;
         color: $primary-color;
       }
 
       p {
-        margin: 5px 0;
+        margin: 0.3125rem 0; // 5px 0 convertido a rem
         color: #666;
       }
 
       .rating {
-        margin-top: 10px;
+        margin-top: 0.625rem; // 10px convertido a rem
 
         span {
           color: gold;

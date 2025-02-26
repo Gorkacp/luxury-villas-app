@@ -2,7 +2,7 @@
 @use '../utils/variables' as *;
 
 #categories {
-  padding: 50px 0;
+  padding: 3.125rem 0; // 50px convertido a rem
   background-color: #f5f5f5; // Fondo claro para la sección de categorías
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 
   h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; // 30px convertido a rem
     color: $primary-color;
     font-size: 2.5rem;
   }
@@ -19,32 +19,32 @@
   .categories-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem; // 20px convertido a rem
     justify-content: center;
 
     .category-card {
       background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 0.625rem; // 10px convertido a rem
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); // 0 4px 8px convertido a rem
       overflow: hidden;
       text-align: center;
       transition: transform 0.3s ease;
-      width: 250px; // Aumentar el ancho de las tarjetas
+      width: 15.625rem; // 250px convertido a rem
 
       &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-0.625rem); // -10px convertido a rem
       }
 
       img {
         width: 100%;
-        height: 200px; // Aumentar la altura de las imágenes
+        height: 12.5rem; // 200px convertido a rem
         object-fit: cover;
       }
 
       .category {
         background-color: $secondary-color;
         color: #fff;
-        padding: 10px;
+        padding: 0.625rem; // 10px convertido a rem
         font-size: 1.2rem;
       }
     }
@@ -52,13 +52,13 @@
 
   @media (max-width: 1024px) {
     .categories-grid {
-      gap: 15px;
+      gap: 0.9375rem; // 15px convertido a rem
     }
 
     .category-card {
-      width: 220px; // Ajustar el ancho de las tarjetas en pantallas medianas
+      width: 13.75rem; // 220px convertido a rem
       img {
-        height: 180px; // Ajustar la altura de las imágenes en pantallas medianas
+        height: 11.25rem; // 180px convertido a rem
       }
     }
   }
@@ -71,9 +71,9 @@
 
     .category-card {
       width: 100%;
-      max-width: 300px;
+      max-width: 18.75rem; // 300px convertido a rem
       img {
-        height: 150px; // Ajustar la altura de las imágenes en pantallas pequeñas
+        height: 9.375rem; // 150px convertido a rem
       }
     }
   }
@@ -85,9 +85,9 @@
 
     .category-card {
       width: 100%;
-      max-width: 280px;
+      max-width: 17.5rem; // 280px convertido a rem
       img {
-        height: 140px; // Ajustar la altura de las imágenes en pantallas muy pequeñas
+        height: 8.75rem; // 140px convertido a rem
       }
     }
   }

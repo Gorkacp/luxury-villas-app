@@ -1,96 +1,94 @@
 @use 'sass:color';
 @use '../utils/variables' as *;
 
-#contact {
-  padding: 50px 0;
-  background-color: #f9f9f9; // Fondo claro para la sección de contacto
+#categories {
+  padding: 3.125rem 0; // 50px convertido a rem
+  background-color: #f5f5f5; // Fondo claro para la sección de categorías
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; // 30px convertido a rem
     color: $primary-color;
     font-size: 2.5rem;
   }
 
-  .contact-form {
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    max-width: 700px; // Ancho máximo del formulario de contacto
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; // 20px convertido a rem
+    justify-content: center;
 
-    &:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: $primary-color;
-      color: #fff;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      font-size: 1rem;
+    .category-card {
+      background-color: #fff;
+      border-radius: 0.625rem; // 10px convertido a rem
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); // 0 4px 8px convertido a rem
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      width: 15.625rem; // 250px convertido a rem
 
       &:hover {
-        background-color: color.adjust($primary-color, $lightness: -10%);
+        transform: translateY(-0.625rem); // -10px convertido a rem
+      }
+
+      img {
+        width: 100%;
+        height: 12.5rem; // 200px convertido a rem
+        object-fit: cover;
+      }
+
+      .category {
+        background-color: $secondary-color;
+        color: #fff;
+        padding: 0.625rem; // 10px convertido a rem
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .categories-grid {
+      gap: 0.9375rem; // 15px convertido a rem
+    }
+
+    .category-card {
+      width: 13.75rem; // 220px convertido a rem
+      img {
+        height: 11.25rem; // 180px convertido a rem
       }
     }
   }
 
   @media (max-width: 768px) {
-    .contact-form {
-      padding: 20px;
-      margin: 15px;
-      max-width: 90%;
+    .categories-grid {
+      flex-direction: column;
+      align-items: center;
     }
 
-    h2 {
-      font-size: 2rem;
-    }
-
-    input, textarea {
-      font-size: 0.9rem;
-      padding: 12px;
-    }
-
-    button {
-      font-size: 0.9rem;
-      padding: 12px 25px;
+    .category-card {
+      width: 100%;
+      max-width: 18.75rem; // 300px convertido a rem
+      img {
+        height: 9.375rem; // 150px convertido a rem
+      }
     }
   }
 
   @media (max-width: 480px) {
-    .contact-form {
-      padding: 15px;
-      margin: 10px;
-      max-width: 100%;
-    }
-
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem; // Ajustar el tamaño del título en pantallas muy pequeñas
     }
 
-    input, textarea {
-      font-size: 0.8rem;
-      padding: 10px;
-    }
-
-    button {
-      font-size: 0.8rem;
-      padding: 10px 20px;
+    .category-card {
+      width: 100%;
+      max-width: 17.5rem; // 280px convertido a rem
+      img {
+        height: 8.75rem; // 140px convertido a rem
+      }
     }
   }
 }

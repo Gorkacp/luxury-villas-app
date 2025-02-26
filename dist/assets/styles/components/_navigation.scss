@@ -4,7 +4,7 @@
 $nav-bg-color: #ffffff;
 $nav-text-color: #333333;
 $nav-hover-color: #007bff;
-$nav-padding: 1rem;
+$nav-padding: 1rem; // 16px convertido a rem
 
 // Mixin for navigation link styles
 @mixin nav-link-styles {
@@ -37,7 +37,7 @@ $nav-padding: 1rem;
         align-items: flex-start;
 
         .nav-link {
-            padding: 0.5rem 0;
+            padding: 0.5rem 0; // 8px 0 convertido a rem
         }
     }
 }

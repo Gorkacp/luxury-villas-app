@@ -1,80 +1,80 @@
-#contact {
-  padding: 50px 0;
-  background-color: #f9f9f9;
+#categories {
+  padding: 3.125rem 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#contact h2 {
+#categories h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #000000;
   font-size: 2.5rem;
 }
-#contact .contact-form {
+#categories .categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+#categories .categories-grid .category-card {
   background-color: #fff;
-  padding: 30px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  max-width: 700px;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 15.625rem;
 }
-#contact .contact-form:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#categories .categories-grid .category-card:hover {
+  transform: translateY(-0.625rem);
 }
-#contact .contact-form input, #contact .contact-form textarea {
+#categories .categories-grid .category-card img {
   width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  height: 12.5rem;
+  object-fit: cover;
 }
-#contact .contact-form button {
+#categories .categories-grid .category-card .category {
   background-color: #000000;
   color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
+  padding: 0.625rem;
+  font-size: 1.2rem;
 }
-#contact .contact-form button:hover {
-  background-color: hsl(0, 0%, -10%);
+@media (max-width: 1024px) {
+  #categories .categories-grid {
+    gap: 0.9375rem;
+  }
+  #categories .category-card {
+    width: 13.75rem;
+  }
+  #categories .category-card img {
+    height: 11.25rem;
+  }
 }
 @media (max-width: 768px) {
-  #contact .contact-form {
-    padding: 20px;
-    margin: 15px;
-    max-width: 90%;
+  #categories .categories-grid {
+    flex-direction: column;
+    align-items: center;
   }
-  #contact h2 {
-    font-size: 2rem;
+  #categories .category-card {
+    width: 100%;
+    max-width: 18.75rem;
   }
-  #contact input, #contact textarea {
-    font-size: 0.9rem;
-    padding: 12px;
-  }
-  #contact button {
-    font-size: 0.9rem;
-    padding: 12px 25px;
+  #categories .category-card img {
+    height: 9.375rem;
   }
 }
 @media (max-width: 480px) {
-  #contact .contact-form {
-    padding: 15px;
-    margin: 10px;
-    max-width: 100%;
+  #categories h2 {
+    font-size: 2rem;
   }
-  #contact h2 {
-    font-size: 1.8rem;
+  #categories .category-card {
+    width: 100%;
+    max-width: 17.5rem;
   }
-  #contact input, #contact textarea {
-    font-size: 0.8rem;
-    padding: 10px;
-  }
-  #contact button {
-    font-size: 0.8rem;
-    padding: 10px 20px;
+  #categories .category-card img {
+    height: 8.75rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */

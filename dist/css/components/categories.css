@@ -1,5 +1,5 @@
 #categories {
-  padding: 50px 0;
+  padding: 3.125rem 0;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -8,48 +8,48 @@
 }
 #categories h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #000000;
   font-size: 2.5rem;
 }
 #categories .categories-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 #categories .categories-grid .category-card {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
-  width: 250px;
+  width: 15.625rem;
 }
 #categories .categories-grid .category-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.625rem);
 }
 #categories .categories-grid .category-card img {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
   object-fit: cover;
 }
 #categories .categories-grid .category-card .category {
   background-color: #000000;
   color: #fff;
-  padding: 10px;
+  padding: 0.625rem;
   font-size: 1.2rem;
 }
 @media (max-width: 1024px) {
   #categories .categories-grid {
-    gap: 15px;
+    gap: 0.9375rem;
   }
   #categories .category-card {
-    width: 220px;
+    width: 13.75rem;
   }
   #categories .category-card img {
-    height: 180px;
+    height: 11.25rem;
   }
 }
 @media (max-width: 768px) {
@@ -59,10 +59,10 @@
   }
   #categories .category-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 18.75rem;
   }
   #categories .category-card img {
-    height: 150px;
+    height: 9.375rem;
   }
 }
 @media (max-width: 480px) {
@@ -71,10 +71,10 @@
   }
   #categories .category-card {
     width: 100%;
-    max-width: 280px;
+    max-width: 17.5rem;
   }
   #categories .category-card img {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 /*# sourceMappingURL=categories.css.map */

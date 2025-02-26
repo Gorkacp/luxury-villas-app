@@ -14,9 +14,9 @@
 }
 
 @mixin button-styles {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; // 10px 20px convertido a rem
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem; // 5px convertido a rem
   background-color: $primary-color;
   color: #fff;
   cursor: pointer;

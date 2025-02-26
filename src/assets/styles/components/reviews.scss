@@ -1,38 +1,38 @@
 @use '../utils/variables' as *;
 
 #reviews {
-  padding: 50px 0;
+  padding: 3.125rem 0; // 50px convertido a rem
   background-color: #f9f9f9; // Fondo claro para la sección de reseñas
   text-align: center;
 
   h2 {
     color: $primary-color;
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; // 30px convertido a rem
   }
 
   .video-container {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; // 30px convertido a rem
     iframe {
       width: 100%;
-      max-width: 560px;
-      height: 315px;
+      max-width: 35rem; // 560px convertido a rem
+      height: 19.6875rem; // 315px convertido a rem
       border: none;
     }
   }
 
   .review {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
+    border-radius: 0.625rem; // 10px convertido a rem
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); // 0 4px 8px convertido a rem
+    padding: 1.25rem; // 20px convertido a rem
+    margin: 1.25rem auto; // 20px convertido a rem
+    max-width: 37.5rem; // 600px convertido a rem
 
     p {
       font-size: 1.2rem;
       color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem; // 10px convertido a rem
     }
 
     span {
@@ -45,8 +45,8 @@
 
   @media (max-width: 768px) {
     .review {
-      padding: 15px;
-      margin: 15px auto;
+      padding: 0.9375rem; // 15px convertido a rem
+      margin: 0.9375rem auto; // 15px convertido a rem
       max-width: 90%;
 
       p {
@@ -65,8 +65,8 @@
 
   @media (max-width: 480px) {
     .review {
-      padding: 10px;
-      margin: 10px auto;
+      padding: 0.625rem; // 10px convertido a rem
+      margin: 0.625rem auto; // 10px convertido a rem
       max-width: 100%;
 
       p {
@@ -84,7 +84,7 @@
 
     .video-container {
       iframe {
-        height: 200px; // Ajustar la altura del video en pantallas pequeñas
+        height: 12.5rem; // 200px convertido a rem
       }
     }
   }
