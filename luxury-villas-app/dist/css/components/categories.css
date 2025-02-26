@@ -1,0 +1,94 @@
+#categories {
+  padding: 50px 0;
+  background-color: #9e9999;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#categories h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 2rem;
+}
+#categories .carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+#categories .carousel input {
+  display: none;
+}
+#categories .carousel .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+#categories .carousel .carousel-inner .carousel-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card .category {
+  background-color: #ebd40c;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card .category:hover {
+  background-color: rgb(186.4777327935, 168.2267206478, 9.5222672065);
+}
+#categories .carousel #carousel-1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+#categories .carousel #carousel-2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+#categories .carousel #carousel-3:checked ~ .carousel-inner {
+  transform: translateX(-200%);
+}
+#categories .carousel #carousel-4:checked ~ .carousel-inner {
+  transform: translateX(-300%);
+}
+#categories .carousel .carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+#categories .carousel .carousel-controls label {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+}
+/*# sourceMappingURL=categories.css.map */

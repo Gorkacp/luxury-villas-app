@@ -1,0 +1,21 @@
+#reviews {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+#reviews .review {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+#reviews .review:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=reviews.css.map */

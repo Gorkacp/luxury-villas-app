@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".carousel").querySelectorAll(".carousel-item");var t=document.querySelector(".carousel-control.prev"),n=document.querySelector(".carousel-control.next");let o=0;function r(n){e.forEach((e,t)=>{e.style.transform=`translateX(${100*(t-n)}%)`})}function c(){r(o=(o+1)%e.length)}n.addEventListener("click",c),t.addEventListener("click",function(){r(o=(o-1+e.length)%e.length)}),setInterval(c,5e3),r(o)});
+//# sourceMappingURL=main.js.map

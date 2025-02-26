@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: rgb(0, 98.4, 204);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+.card__header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card__image {
+  width: 100%;
+  border-radius: 8px;
+}
+.card__description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card--highlighted {
+  border-color: #ffcc00;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #cccccc;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/luxury-villas-app/src/assets/images/hero.png") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#hero p {
+  font-size: 1.25rem;
+}
+
+.navigation {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navigation .nav-link {
+  color: #333333;
+  padding: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navigation .nav-link:hover {
+  color: #007bff;
+}
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+#categories {
+  padding: 50px 0;
+  background-color: #9e9999;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#categories h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 2rem;
+}
+#categories .carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+#categories .carousel input {
+  display: none;
+}
+#categories .carousel .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+#categories .carousel .carousel-inner .carousel-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card .category {
+  background-color: #ebd40c;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#categories .carousel .carousel-inner .carousel-item .category-card .category:hover {
+  background-color: rgb(186.4777327935, 168.2267206478, 9.5222672065);
+}
+#categories .carousel #carousel-1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+#categories .carousel #carousel-2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+#categories .carousel #carousel-3:checked ~ .carousel-inner {
+  transform: translateX(-200%);
+}
+#categories .carousel #carousel-4:checked ~ .carousel-inner {
+  transform: translateX(-300%);
+}
+#categories .carousel .carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+#categories .carousel .carousel-controls label {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+#featured {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+#featured h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 2rem;
+}
+#featured .featured-house {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#featured .featured-house img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+#featured .featured-house .house-details {
+  flex: 1;
+}
+#featured .featured-house .house-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+#featured .featured-house .house-details p {
+  margin: 5px 0;
+  color: #666;
+}
+#featured .featured-house .house-details .rating {
+  margin-top: 10px;
+}
+#featured .featured-house .house-details .rating span {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+#reviews {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+#reviews .review {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+#reviews .review:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  padding: 50px 0;
+}
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+#contact .contact-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+#contact .contact-form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#contact .contact-form input, #contact .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact .contact-form button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#contact .contact-form button:hover {
+  background-color: hsl(0, 0%, -10%);
+}
+/*# sourceMappingURL=main.css.map */
