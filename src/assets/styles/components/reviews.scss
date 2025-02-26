@@ -11,6 +11,16 @@
     margin-bottom: 30px;
   }
 
+  .video-container {
+    margin-bottom: 30px;
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+  }
+
   .review {
     background-color: #fff;
     border-radius: 10px;
@@ -60,16 +70,22 @@
       max-width: 100%;
 
       p {
-        font-size: 0.9rem;
+        font-size: 0.8rem; // Reducir el tamaño de la fuente en pantallas pequeñas
       }
 
       span {
-        font-size: 0.8rem;
+        font-size: 0.7rem; // Reducir el tamaño de la fuente en pantallas pequeñas
       }
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem; // Reducir el tamaño del título en pantallas pequeñas
+    }
+
+    .video-container {
+      iframe {
+        height: 200px; // Ajustar la altura del video en pantallas pequeñas
+      }
     }
   }
 }
