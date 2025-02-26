@@ -23,7 +23,7 @@ const paths = {
     dest: 'dist/assets' // Carpeta destino para assets
   },
   css: {
-    src: 'src/assets/css/**/*.css',
+    src: 'src/assets/styles/**/*.css', // Actualiza esta ruta si es necesario
     dest: 'dist/css'
   }
 };
