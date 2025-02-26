@@ -10,20 +10,20 @@
 }
 #contact .contact-form {
   background-color: #fff;
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 5px;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  max-width: 600px;
+  max-width: 700px;
 }
 #contact .contact-form:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #contact .contact-form input, #contact .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
@@ -31,7 +31,7 @@
 #contact .contact-form button {
   background-color: #000000;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -43,34 +43,38 @@
 }
 @media (max-width: 768px) {
   #contact .contact-form {
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 90%;
   }
   #contact h2 {
     font-size: 2rem;
   }
   #contact input, #contact textarea {
     font-size: 0.9rem;
+    padding: 12px;
   }
   #contact button {
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 12px 25px;
   }
 }
 @media (max-width: 480px) {
   #contact .contact-form {
-    padding: 10px;
-    margin: 5px;
+    padding: 15px;
+    margin: 10px;
+    max-width: 100%;
   }
   #contact h2 {
     font-size: 1.8rem;
   }
   #contact input, #contact textarea {
     font-size: 0.8rem;
+    padding: 10px;
   }
   #contact button {
     font-size: 0.8rem;
-    padding: 8px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -32,4 +32,44 @@
       font-weight: 500;
     }
   }
+
+  @media (max-width: 768px) {
+    .review {
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 90%;
+
+      p {
+        font-size: 1rem;
+      }
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .review {
+      padding: 10px;
+      margin: 10px auto;
+      max-width: 100%;
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
 }

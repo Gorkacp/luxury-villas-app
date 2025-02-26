@@ -97,6 +97,22 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #cccccc;
 }
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+}
 
 #hero {
   display: flex;
@@ -157,93 +173,69 @@ header nav ul li a:hover {
   color: #000000;
   font-size: 2.5rem;
 }
-#categories .carousel {
-  position: relative;
-  width: 90%;
-  max-width: 1000px;
-  overflow: hidden;
+#categories .categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#categories .categories-grid .category-card {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-}
-#categories .carousel input {
-  display: none;
-}
-#categories .carousel .carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-#categories .carousel .carousel-inner .carousel-item {
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#categories .carousel .carousel-inner .carousel-item .category-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  overflow: hidden;
   text-align: center;
+  transition: transform 0.3s ease;
+  width: 250px;
 }
-#categories .carousel .carousel-inner .carousel-item .category-card img {
+#categories .categories-grid .category-card:hover {
+  transform: translateY(-10px);
+}
+#categories .categories-grid .category-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 5px;
 }
-#categories .carousel .carousel-inner .carousel-item .category-card .category {
+#categories .categories-grid .category-card .category {
   background-color: #000000;
   color: #fff;
   padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
 }
-#categories .carousel .carousel-inner .carousel-item .category-card .category:hover {
-  background-color: hsl(0, 0%, -10%);
-}
-#categories .carousel #carousel-1:checked ~ .carousel-inner {
-  transform: translateX(0%);
-}
-#categories .carousel #carousel-2:checked ~ .carousel-inner {
-  transform: translateX(-100%);
-}
-#categories .carousel #carousel-3:checked ~ .carousel-inner {
-  transform: translateX(-200%);
-}
-#categories .carousel #carousel-4:checked ~ .carousel-inner {
-  transform: translateX(-300%);
-}
-#categories .carousel .carousel-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-#categories .carousel .carousel-controls label {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 2rem;
-  z-index: 1;
+@media (max-width: 1024px) {
+  #categories .categories-grid {
+    gap: 15px;
+  }
+  #categories .category-card {
+    width: 220px;
+  }
+  #categories .category-card img {
+    height: 180px;
+  }
 }
 @media (max-width: 768px) {
-  #categories .carousel {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+  #categories .categories-grid {
+    flex-direction: column;
+    align-items: center;
   }
-  #categories .carousel-inner .carousel-item .category-card img {
+  #categories .category-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  #categories .category-card img {
     height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  #categories h2 {
+    font-size: 2rem;
+  }
+  #categories .category-card {
+    width: 100%;
+    max-width: 280px;
+  }
+  #categories .category-card img {
+    height: 140px;
   }
 }
 
@@ -322,6 +314,38 @@ header nav ul li a:hover {
   color: #000000;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  #reviews .review {
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 90%;
+  }
+  #reviews .review p {
+    font-size: 1rem;
+  }
+  #reviews .review span {
+    font-size: 0.9rem;
+  }
+  #reviews h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  #reviews .review {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  #reviews .review p {
+    font-size: 0.9rem;
+  }
+  #reviews .review span {
+    font-size: 0.8rem;
+  }
+  #reviews h2 {
+    font-size: 1.8rem;
+  }
+}
 
 #contact {
   padding: 50px 0;
@@ -335,20 +359,20 @@ header nav ul li a:hover {
 }
 #contact .contact-form {
   background-color: #fff;
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 5px;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  max-width: 600px;
+  max-width: 700px;
 }
 #contact .contact-form:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #contact .contact-form input, #contact .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
@@ -356,7 +380,7 @@ header nav ul li a:hover {
 #contact .contact-form button {
   background-color: #000000;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -368,34 +392,38 @@ header nav ul li a:hover {
 }
 @media (max-width: 768px) {
   #contact .contact-form {
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 90%;
   }
   #contact h2 {
     font-size: 2rem;
   }
   #contact input, #contact textarea {
     font-size: 0.9rem;
+    padding: 12px;
   }
   #contact button {
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 12px 25px;
   }
 }
 @media (max-width: 480px) {
   #contact .contact-form {
-    padding: 10px;
-    margin: 5px;
+    padding: 15px;
+    margin: 10px;
+    max-width: 100%;
   }
   #contact h2 {
     font-size: 1.8rem;
   }
   #contact input, #contact textarea {
     font-size: 0.8rem;
+    padding: 10px;
   }
   #contact button {
     font-size: 0.8rem;
-    padding: 8px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

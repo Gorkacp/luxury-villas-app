@@ -28,4 +28,24 @@ header {
       }
     }
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem; // Ajustar el tamaño del título en pantallas medianas
+    }
+
+    nav ul li a {
+      font-size: 1rem; // Ajustar el tamaño de los enlaces en pantallas medianas
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem; // Ajustar el tamaño del título en pantallas pequeñas
+    }
+
+    nav ul li a {
+      font-size: 0.9rem; // Ajustar el tamaño de los enlaces en pantallas pequeñas
+    }
+  }
 }

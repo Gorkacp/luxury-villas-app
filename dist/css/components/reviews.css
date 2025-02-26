@@ -27,4 +27,36 @@
   color: #000000;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  #reviews .review {
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 90%;
+  }
+  #reviews .review p {
+    font-size: 1rem;
+  }
+  #reviews .review span {
+    font-size: 0.9rem;
+  }
+  #reviews h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  #reviews .review {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  #reviews .review p {
+    font-size: 0.9rem;
+  }
+  #reviews .review span {
+    font-size: 0.8rem;
+  }
+  #reviews h2 {
+    font-size: 1.8rem;
+  }
+}
 /*# sourceMappingURL=reviews.css.map */
