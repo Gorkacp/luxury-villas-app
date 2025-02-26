@@ -1,0 +1,43 @@
+// _navigation.scss
+
+// Variables for navigation styles
+$nav-bg-color: #ffffff;
+$nav-text-color: #333333;
+$nav-hover-color: #007bff;
+$nav-padding: 1rem;
+
+// Mixin for navigation link styles
+@mixin nav-link-styles {
+    color: $nav-text-color;
+    padding: $nav-padding;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $nav-hover-color;
+    }
+}
+
+// Navigation container styles
+.navigation {
+    background-color: $nav-bg-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $nav-padding;
+
+    // Navigation links
+    .nav-link {
+        @include nav-link-styles;
+    }
+
+    // Responsive styles
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .nav-link {
+            padding: 0.5rem 0;
+        }
+    }
+}

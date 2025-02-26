@@ -1,0 +1,31 @@
+// Este archivo define mapas de Sass que pueden ser utilizados para gestionar estilos de manera más eficiente.
+
+// Mapa de colores
+$color-map: (
+  primary: #000000,
+  secondary: #2ecc71,
+  accent: #e74c3c,
+  background: #ecf0f1,
+  text: #2c3e50,
+);
+
+// Mapa de tamaños
+$size-map: (
+  small: 0.8rem,
+  medium: 1rem,
+  large: 1.5rem,
+  xlarge: 2rem,
+);
+
+// Mapa de fuentes
+$font-map: (
+  heading: 'Arial, sans-serif',
+  body: 'Georgia, serif',
+);
+
+// Mapa de breakpoints para responsive design
+$breakpoint-map: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+);

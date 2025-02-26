@@ -1,0 +1,41 @@
+// _cards.scss
+// Estilos para las tarjetas que mostrarán las propiedades
+
+$card-bg-color: #ffffff; // Color de fondo de la tarjeta
+$card-border-color: #e0e0e0; // Color del borde de la tarjeta
+$card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Sombra de la tarjeta
+$card-padding: 20px; // Espaciado interno de la tarjeta
+$card-border-radius: 8px; // Radio de borde de la tarjeta
+
+.card {
+  background-color: $card-bg-color;
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+  padding: $card-padding;
+  transition: transform 0.3s;
+
+  &__header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: $card-border-radius;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.card--highlighted {
+  border-color: #ffcc00; // Color de borde para tarjetas destacadas
+}

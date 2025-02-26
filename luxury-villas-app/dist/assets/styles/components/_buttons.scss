@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+.button {
+  background-color: color.adjust(#007bff, $lightness: -10%);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
